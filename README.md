@@ -7,10 +7,20 @@
 
 ## Setup
 
+### Dotenv
+
 Copy the dotenv example file and fill the variables:
 
 ```sh
 $ cp .env.example .env
+```
+
+### Drizzle
+
+Prepare your Supabase Postgres DB and then migrate the schema:
+
+```sh
+$ pnpm db:migrate
 ```
 
 ## Development
