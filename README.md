@@ -17,7 +17,7 @@ $ cp .env.example .env
 
 ### Drizzle
 
-Prepare your Supabase Postgres DB and then migrate the schema:
+Prepare your Neon Postgres DB and then migrate the schema:
 
 ```sh
 $ pnpm db:migrate
