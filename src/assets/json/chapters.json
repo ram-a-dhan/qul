@@ -1,0 +1,686 @@
+[
+  {
+    "id": 1,
+    "nameAr": "الفاتحة",
+    "nameEn": "Al-Fatihah",
+    "ayahCount": 7
+  },
+  {
+    "id": 2,
+    "nameAr": "البقرة",
+    "nameEn": "Al-Baqarah",
+    "ayahCount": 286
+  },
+  {
+    "id": 3,
+    "nameAr": "آل عمران",
+    "nameEn": "Ali 'Imran",
+    "ayahCount": 200
+  },
+  {
+    "id": 4,
+    "nameAr": "النساء",
+    "nameEn": "An-Nisa",
+    "ayahCount": 176
+  },
+  {
+    "id": 5,
+    "nameAr": "المائدة",
+    "nameEn": "Al-Ma'idah",
+    "ayahCount": 120
+  },
+  {
+    "id": 6,
+    "nameAr": "الأنعام",
+    "nameEn": "Al-An'am",
+    "ayahCount": 165
+  },
+  {
+    "id": 7,
+    "nameAr": "الأعراف",
+    "nameEn": "Al-A'raf",
+    "ayahCount": 206
+  },
+  {
+    "id": 8,
+    "nameAr": "الأنفال",
+    "nameEn": "Al-Anfal",
+    "ayahCount": 75
+  },
+  {
+    "id": 9,
+    "nameAr": "التوبة",
+    "nameEn": "At-Tawbah",
+    "ayahCount": 129
+  },
+  {
+    "id": 10,
+    "nameAr": "يونس",
+    "nameEn": "Yunus",
+    "ayahCount": 109
+  },
+  {
+    "id": 11,
+    "nameAr": "هود",
+    "nameEn": "Hud",
+    "ayahCount": 123
+  },
+  {
+    "id": 12,
+    "nameAr": "يوسف",
+    "nameEn": "Yusuf",
+    "ayahCount": 111
+  },
+  {
+    "id": 13,
+    "nameAr": "الرعد",
+    "nameEn": "Ar-Ra'd",
+    "ayahCount": 43
+  },
+  {
+    "id": 14,
+    "nameAr": "ابراهيم",
+    "nameEn": "Ibrahim",
+    "ayahCount": 52
+  },
+  {
+    "id": 15,
+    "nameAr": "الحجر",
+    "nameEn": "Al-Hijr",
+    "ayahCount": 99
+  },
+  {
+    "id": 16,
+    "nameAr": "النحل",
+    "nameEn": "An-Nahl",
+    "ayahCount": 128
+  },
+  {
+    "id": 17,
+    "nameAr": "الإسراء",
+    "nameEn": "Al-Isra",
+    "ayahCount": 111
+  },
+  {
+    "id": 18,
+    "nameAr": "الكهف",
+    "nameEn": "Al-Kahf",
+    "ayahCount": 110
+  },
+  {
+    "id": 19,
+    "nameAr": "مريم",
+    "nameEn": "Maryam",
+    "ayahCount": 98
+  },
+  {
+    "id": 20,
+    "nameAr": "طه",
+    "nameEn": "Taha",
+    "ayahCount": 135
+  },
+  {
+    "id": 21,
+    "nameAr": "الأنبياء",
+    "nameEn": "Al-Anbya",
+    "ayahCount": 112
+  },
+  {
+    "id": 22,
+    "nameAr": "الحج",
+    "nameEn": "Al-Hajj",
+    "ayahCount": 78
+  },
+  {
+    "id": 23,
+    "nameAr": "المؤمنون",
+    "nameEn": "Al-Mu'minun",
+    "ayahCount": 118
+  },
+  {
+    "id": 24,
+    "nameAr": "النور",
+    "nameEn": "An-Nur",
+    "ayahCount": 64
+  },
+  {
+    "id": 25,
+    "nameAr": "الفرقان",
+    "nameEn": "Al-Furqan",
+    "ayahCount": 77
+  },
+  {
+    "id": 26,
+    "nameAr": "الشعراء",
+    "nameEn": "Ash-Shu'ara",
+    "ayahCount": 227
+  },
+  {
+    "id": 27,
+    "nameAr": "النمل",
+    "nameEn": "An-Naml",
+    "ayahCount": 93
+  },
+  {
+    "id": 28,
+    "nameAr": "القصص",
+    "nameEn": "Al-Qasas",
+    "ayahCount": 88
+  },
+  {
+    "id": 29,
+    "nameAr": "العنكبوت",
+    "nameEn": "Al-'Ankabut",
+    "ayahCount": 69
+  },
+  {
+    "id": 30,
+    "nameAr": "الروم",
+    "nameEn": "Ar-Rum",
+    "ayahCount": 60
+  },
+  {
+    "id": 31,
+    "nameAr": "لقمان",
+    "nameEn": "Luqman",
+    "ayahCount": 34
+  },
+  {
+    "id": 32,
+    "nameAr": "السجدة",
+    "nameEn": "As-Sajdah",
+    "ayahCount": 30
+  },
+  {
+    "id": 33,
+    "nameAr": "الأحزاب",
+    "nameEn": "Al-Ahzab",
+    "ayahCount": 73
+  },
+  {
+    "id": 34,
+    "nameAr": "سبإ",
+    "nameEn": "Saba",
+    "ayahCount": 54
+  },
+  {
+    "id": 35,
+    "nameAr": "فاطر",
+    "nameEn": "Fatir",
+    "ayahCount": 45
+  },
+  {
+    "id": 36,
+    "nameAr": "يس",
+    "nameEn": "Ya-Sin",
+    "ayahCount": 83
+  },
+  {
+    "id": 37,
+    "nameAr": "الصافات",
+    "nameEn": "As-Saffat",
+    "ayahCount": 182
+  },
+  {
+    "id": 38,
+    "nameAr": "ص",
+    "nameEn": "Sad",
+    "ayahCount": 88
+  },
+  {
+    "id": 39,
+    "nameAr": "الزمر",
+    "nameEn": "Az-Zumar",
+    "ayahCount": 75
+  },
+  {
+    "id": 40,
+    "nameAr": "غافر",
+    "nameEn": "Ghafir",
+    "ayahCount": 85
+  },
+  {
+    "id": 41,
+    "nameAr": "فصلت",
+    "nameEn": "Fussilat",
+    "ayahCount": 54
+  },
+  {
+    "id": 42,
+    "nameAr": "الشورى",
+    "nameEn": "Ash-Shuraa",
+    "ayahCount": 53
+  },
+  {
+    "id": 43,
+    "nameAr": "الزخرف",
+    "nameEn": "Az-Zukhruf",
+    "ayahCount": 89
+  },
+  {
+    "id": 44,
+    "nameAr": "الدخان",
+    "nameEn": "Ad-Dukhan",
+    "ayahCount": 59
+  },
+  {
+    "id": 45,
+    "nameAr": "الجاثية",
+    "nameEn": "Al-Jathiyah",
+    "ayahCount": 37
+  },
+  {
+    "id": 46,
+    "nameAr": "الأحقاف",
+    "nameEn": "Al-Ahqaf",
+    "ayahCount": 35
+  },
+  {
+    "id": 47,
+    "nameAr": "محمد",
+    "nameEn": "Muhammad",
+    "ayahCount": 38
+  },
+  {
+    "id": 48,
+    "nameAr": "الفتح",
+    "nameEn": "Al-Fath",
+    "ayahCount": 29
+  },
+  {
+    "id": 49,
+    "nameAr": "الحجرات",
+    "nameEn": "Al-Hujurat",
+    "ayahCount": 18
+  },
+  {
+    "id": 50,
+    "nameAr": "ق",
+    "nameEn": "Qaf",
+    "ayahCount": 45
+  },
+  {
+    "id": 51,
+    "nameAr": "الذاريات",
+    "nameEn": "Adh-Dhariyat",
+    "ayahCount": 60
+  },
+  {
+    "id": 52,
+    "nameAr": "الطور",
+    "nameEn": "At-Tur",
+    "ayahCount": 49
+  },
+  {
+    "id": 53,
+    "nameAr": "النجم",
+    "nameEn": "An-Najm",
+    "ayahCount": 62
+  },
+  {
+    "id": 54,
+    "nameAr": "القمر",
+    "nameEn": "Al-Qamar",
+    "ayahCount": 55
+  },
+  {
+    "id": 55,
+    "nameAr": "الرحمن",
+    "nameEn": "Ar-Rahman",
+    "ayahCount": 78
+  },
+  {
+    "id": 56,
+    "nameAr": "الواقعة",
+    "nameEn": "Al-Waqi'ah",
+    "ayahCount": 96
+  },
+  {
+    "id": 57,
+    "nameAr": "الحديد",
+    "nameEn": "Al-Hadid",
+    "ayahCount": 29
+  },
+  {
+    "id": 58,
+    "nameAr": "المجادلة",
+    "nameEn": "Al-Mujadila",
+    "ayahCount": 22
+  },
+  {
+    "id": 59,
+    "nameAr": "الحشر",
+    "nameEn": "Al-Hashr",
+    "ayahCount": 24
+  },
+  {
+    "id": 60,
+    "nameAr": "الممتحنة",
+    "nameEn": "Al-Mumtahanah",
+    "ayahCount": 13
+  },
+  {
+    "id": 61,
+    "nameAr": "الصف",
+    "nameEn": "As-Saf",
+    "ayahCount": 14
+  },
+  {
+    "id": 62,
+    "nameAr": "الجمعة",
+    "nameEn": "Al-Jumu'ah",
+    "ayahCount": 11
+  },
+  {
+    "id": 63,
+    "nameAr": "المنافقون",
+    "nameEn": "Al-Munafiqun",
+    "ayahCount": 11
+  },
+  {
+    "id": 64,
+    "nameAr": "التغابن",
+    "nameEn": "At-Taghabun",
+    "ayahCount": 18
+  },
+  {
+    "id": 65,
+    "nameAr": "الطلاق",
+    "nameEn": "At-Talaq",
+    "ayahCount": 12
+  },
+  {
+    "id": 66,
+    "nameAr": "التحريم",
+    "nameEn": "At-Tahrim",
+    "ayahCount": 12
+  },
+  {
+    "id": 67,
+    "nameAr": "الملك",
+    "nameEn": "Al-Mulk",
+    "ayahCount": 30
+  },
+  {
+    "id": 68,
+    "nameAr": "القلم",
+    "nameEn": "Al-Qalam",
+    "ayahCount": 52
+  },
+  {
+    "id": 69,
+    "nameAr": "الحاقة",
+    "nameEn": "Al-Haqqah",
+    "ayahCount": 52
+  },
+  {
+    "id": 70,
+    "nameAr": "المعارج",
+    "nameEn": "Al-Ma'arij",
+    "ayahCount": 44
+  },
+  {
+    "id": 71,
+    "nameAr": "نوح",
+    "nameEn": "Nuh",
+    "ayahCount": 28
+  },
+  {
+    "id": 72,
+    "nameAr": "الجن",
+    "nameEn": "Al-Jinn",
+    "ayahCount": 28
+  },
+  {
+    "id": 73,
+    "nameAr": "المزمل",
+    "nameEn": "Al-Muzzammil",
+    "ayahCount": 20
+  },
+  {
+    "id": 74,
+    "nameAr": "المدثر",
+    "nameEn": "Al-Muddaththir",
+    "ayahCount": 56
+  },
+  {
+    "id": 75,
+    "nameAr": "القيامة",
+    "nameEn": "Al-Qiyamah",
+    "ayahCount": 40
+  },
+  {
+    "id": 76,
+    "nameAr": "الانسان",
+    "nameEn": "Al-Insan",
+    "ayahCount": 31
+  },
+  {
+    "id": 77,
+    "nameAr": "المرسلات",
+    "nameEn": "Al-Mursalat",
+    "ayahCount": 50
+  },
+  {
+    "id": 78,
+    "nameAr": "النبإ",
+    "nameEn": "An-Naba",
+    "ayahCount": 40
+  },
+  {
+    "id": 79,
+    "nameAr": "النازعات",
+    "nameEn": "An-Nazi'at",
+    "ayahCount": 46
+  },
+  {
+    "id": 80,
+    "nameAr": "عبس",
+    "nameEn": "'Abasa",
+    "ayahCount": 42
+  },
+  {
+    "id": 81,
+    "nameAr": "التكوير",
+    "nameEn": "At-Takwir",
+    "ayahCount": 29
+  },
+  {
+    "id": 82,
+    "nameAr": "الإنفطار",
+    "nameEn": "Al-Infitar",
+    "ayahCount": 19
+  },
+  {
+    "id": 83,
+    "nameAr": "المطففين",
+    "nameEn": "Al-Mutaffifin",
+    "ayahCount": 36
+  },
+  {
+    "id": 84,
+    "nameAr": "الإنشقاق",
+    "nameEn": "Al-Inshiqaq",
+    "ayahCount": 25
+  },
+  {
+    "id": 85,
+    "nameAr": "البروج",
+    "nameEn": "Al-Buruj",
+    "ayahCount": 22
+  },
+  {
+    "id": 86,
+    "nameAr": "الطارق",
+    "nameEn": "At-Tariq",
+    "ayahCount": 17
+  },
+  {
+    "id": 87,
+    "nameAr": "الأعلى",
+    "nameEn": "Al-A'la",
+    "ayahCount": 19
+  },
+  {
+    "id": 88,
+    "nameAr": "الغاشية",
+    "nameEn": "Al-Ghashiyah",
+    "ayahCount": 26
+  },
+  {
+    "id": 89,
+    "nameAr": "الفجر",
+    "nameEn": "Al-Fajr",
+    "ayahCount": 30
+  },
+  {
+    "id": 90,
+    "nameAr": "البلد",
+    "nameEn": "Al-Balad",
+    "ayahCount": 20
+  },
+  {
+    "id": 91,
+    "nameAr": "الشمس",
+    "nameEn": "Ash-Shams",
+    "ayahCount": 15
+  },
+  {
+    "id": 92,
+    "nameAr": "الليل",
+    "nameEn": "Al-Layl",
+    "ayahCount": 21
+  },
+  {
+    "id": 93,
+    "nameAr": "الضحى",
+    "nameEn": "Ad-Duhaa",
+    "ayahCount": 11
+  },
+  {
+    "id": 94,
+    "nameAr": "الشرح",
+    "nameEn": "Ash-Sharh",
+    "ayahCount": 8
+  },
+  {
+    "id": 95,
+    "nameAr": "التين",
+    "nameEn": "At-Tin",
+    "ayahCount": 8
+  },
+  {
+    "id": 96,
+    "nameAr": "العلق",
+    "nameEn": "Al-'Alaq",
+    "ayahCount": 19
+  },
+  {
+    "id": 97,
+    "nameAr": "القدر",
+    "nameEn": "Al-Qadr",
+    "ayahCount": 5
+  },
+  {
+    "id": 98,
+    "nameAr": "البينة",
+    "nameEn": "Al-Bayyinah",
+    "ayahCount": 8
+  },
+  {
+    "id": 99,
+    "nameAr": "الزلزلة",
+    "nameEn": "Az-Zalzalah",
+    "ayahCount": 8
+  },
+  {
+    "id": 100,
+    "nameAr": "العاديات",
+    "nameEn": "Al-'Adiyat",
+    "ayahCount": 11
+  },
+  {
+    "id": 101,
+    "nameAr": "القارعة",
+    "nameEn": "Al-Qari'ah",
+    "ayahCount": 11
+  },
+  {
+    "id": 102,
+    "nameAr": "التكاثر",
+    "nameEn": "At-Takathur",
+    "ayahCount": 8
+  },
+  {
+    "id": 103,
+    "nameAr": "العصر",
+    "nameEn": "Al-'Asr",
+    "ayahCount": 3
+  },
+  {
+    "id": 104,
+    "nameAr": "الهمزة",
+    "nameEn": "Al-Humazah",
+    "ayahCount": 9
+  },
+  {
+    "id": 105,
+    "nameAr": "الفيل",
+    "nameEn": "Al-Fil",
+    "ayahCount": 5
+  },
+  {
+    "id": 106,
+    "nameAr": "قريش",
+    "nameEn": "Quraysh",
+    "ayahCount": 4
+  },
+  {
+    "id": 107,
+    "nameAr": "الماعون",
+    "nameEn": "Al-Ma'un",
+    "ayahCount": 7
+  },
+  {
+    "id": 108,
+    "nameAr": "الكوثر",
+    "nameEn": "Al-Kawthar",
+    "ayahCount": 3
+  },
+  {
+    "id": 109,
+    "nameAr": "الكافرون",
+    "nameEn": "Al-Kafirun",
+    "ayahCount": 6
+  },
+  {
+    "id": 110,
+    "nameAr": "النصر",
+    "nameEn": "An-Nasr",
+    "ayahCount": 3
+  },
+  {
+    "id": 111,
+    "nameAr": "المسد",
+    "nameEn": "Al-Masad",
+    "ayahCount": 5
+  },
+  {
+    "id": 112,
+    "nameAr": "الإخلاص",
+    "nameEn": "Al-Ikhlas",
+    "ayahCount": 4
+  },
+  {
+    "id": 113,
+    "nameAr": "الفلق",
+    "nameEn": "Al-Falaq",
+    "ayahCount": 5
+  },
+  {
+    "id": 114,
+    "nameAr": "الناس",
+    "nameEn": "An-Nas",
+    "ayahCount": 6
+  }
+]
