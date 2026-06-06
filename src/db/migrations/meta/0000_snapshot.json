@@ -1,5 +1,5 @@
 {
-  "id": "86b5b1d0-6e30-4b30-8050-11234947a60f",
+  "id": "8d421434-2d33-4c05-bc88-4fcea1e332da",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -14,14 +14,8 @@
           "primaryKey": true,
           "notNull": true
         },
-        "name_ar": {
-          "name": "name_ar",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "name_en": {
-          "name": "name_en",
+        "name": {
+          "name": "name",
           "type": "text",
           "primaryKey": false,
           "notNull": true
@@ -31,12 +25,6 @@
           "type": "smallint",
           "primaryKey": false,
           "notNull": true
-        },
-        "avg_duration_ms": {
-          "name": "avg_duration_ms",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
         }
       },
       "indexes": {},
@@ -170,20 +158,8 @@
           "primaryKey": false,
           "notNull": true
         },
-        "name_en": {
-          "name": "name_en",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "name_ar": {
-          "name": "name_ar",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "name_display": {
-          "name": "name_display",
+        "name": {
+          "name": "name",
           "type": "text",
           "primaryKey": false,
           "notNull": true
@@ -193,13 +169,6 @@
           "type": "text",
           "primaryKey": false,
           "notNull": true
-        },
-        "is_active": {
-          "name": "is_active",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": true
         }
       },
       "indexes": {},
@@ -306,20 +275,8 @@
           "primaryKey": false,
           "notNull": true
         },
-        "reciter_id": {
-          "name": "reciter_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "duration_ms": {
-          "name": "duration_ms",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "text_ar": {
-          "name": "text_ar",
+        "text": {
+          "name": "text",
           "type": "text",
           "primaryKey": false,
           "notNull": true
@@ -339,19 +296,6 @@
           ],
           "onDelete": "no action",
           "onUpdate": "no action"
-        },
-        "verses_reciter_id_reciters_id_fk": {
-          "name": "verses_reciter_id_reciters_id_fk",
-          "tableFrom": "verses",
-          "tableTo": "reciters",
-          "columnsFrom": [
-            "reciter_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
         }
       },
       "compositePrimaryKeys": {},
@@ -361,8 +305,7 @@
           "nullsNotDistinct": false,
           "columns": [
             "chapter_id",
-            "verse_number",
-            "reciter_id"
+            "verse_number"
           ]
         }
       },
