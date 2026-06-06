@@ -18,9 +18,8 @@ async function main() {
   const result = await response.json();
   const chapters = result.chapters.map((c) => ({
     id: c.id,
-    nameAr: c.name_arabic,
-    nameEn: c.name_simple,
-    ayahCount: c.verses_count,
+    name: c.name_simple,
+    verseCount: c.verses_count,
   }));
 
   const __dirname = path.dirname(fileURLToPath(import.meta.url));

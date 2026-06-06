@@ -1,686 +1,572 @@
 [
   {
     "id": 1,
-    "nameAr": "الفاتحة",
-    "nameEn": "Al-Fatihah",
-    "ayahCount": 7
+    "name": "Al-Fatihah",
+    "verseCount": 7
   },
   {
     "id": 2,
-    "nameAr": "البقرة",
-    "nameEn": "Al-Baqarah",
-    "ayahCount": 286
+    "name": "Al-Baqarah",
+    "verseCount": 286
   },
   {
     "id": 3,
-    "nameAr": "آل عمران",
-    "nameEn": "Ali 'Imran",
-    "ayahCount": 200
+    "name": "Ali 'Imran",
+    "verseCount": 200
   },
   {
     "id": 4,
-    "nameAr": "النساء",
-    "nameEn": "An-Nisa",
-    "ayahCount": 176
+    "name": "An-Nisa",
+    "verseCount": 176
   },
   {
     "id": 5,
-    "nameAr": "المائدة",
-    "nameEn": "Al-Ma'idah",
-    "ayahCount": 120
+    "name": "Al-Ma'idah",
+    "verseCount": 120
   },
   {
     "id": 6,
-    "nameAr": "الأنعام",
-    "nameEn": "Al-An'am",
-    "ayahCount": 165
+    "name": "Al-An'am",
+    "verseCount": 165
   },
   {
     "id": 7,
-    "nameAr": "الأعراف",
-    "nameEn": "Al-A'raf",
-    "ayahCount": 206
+    "name": "Al-A'raf",
+    "verseCount": 206
   },
   {
     "id": 8,
-    "nameAr": "الأنفال",
-    "nameEn": "Al-Anfal",
-    "ayahCount": 75
+    "name": "Al-Anfal",
+    "verseCount": 75
   },
   {
     "id": 9,
-    "nameAr": "التوبة",
-    "nameEn": "At-Tawbah",
-    "ayahCount": 129
+    "name": "At-Tawbah",
+    "verseCount": 129
   },
   {
     "id": 10,
-    "nameAr": "يونس",
-    "nameEn": "Yunus",
-    "ayahCount": 109
+    "name": "Yunus",
+    "verseCount": 109
   },
   {
     "id": 11,
-    "nameAr": "هود",
-    "nameEn": "Hud",
-    "ayahCount": 123
+    "name": "Hud",
+    "verseCount": 123
   },
   {
     "id": 12,
-    "nameAr": "يوسف",
-    "nameEn": "Yusuf",
-    "ayahCount": 111
+    "name": "Yusuf",
+    "verseCount": 111
   },
   {
     "id": 13,
-    "nameAr": "الرعد",
-    "nameEn": "Ar-Ra'd",
-    "ayahCount": 43
+    "name": "Ar-Ra'd",
+    "verseCount": 43
   },
   {
     "id": 14,
-    "nameAr": "ابراهيم",
-    "nameEn": "Ibrahim",
-    "ayahCount": 52
+    "name": "Ibrahim",
+    "verseCount": 52
   },
   {
     "id": 15,
-    "nameAr": "الحجر",
-    "nameEn": "Al-Hijr",
-    "ayahCount": 99
+    "name": "Al-Hijr",
+    "verseCount": 99
   },
   {
     "id": 16,
-    "nameAr": "النحل",
-    "nameEn": "An-Nahl",
-    "ayahCount": 128
+    "name": "An-Nahl",
+    "verseCount": 128
   },
   {
     "id": 17,
-    "nameAr": "الإسراء",
-    "nameEn": "Al-Isra",
-    "ayahCount": 111
+    "name": "Al-Isra",
+    "verseCount": 111
   },
   {
     "id": 18,
-    "nameAr": "الكهف",
-    "nameEn": "Al-Kahf",
-    "ayahCount": 110
+    "name": "Al-Kahf",
+    "verseCount": 110
   },
   {
     "id": 19,
-    "nameAr": "مريم",
-    "nameEn": "Maryam",
-    "ayahCount": 98
+    "name": "Maryam",
+    "verseCount": 98
   },
   {
     "id": 20,
-    "nameAr": "طه",
-    "nameEn": "Taha",
-    "ayahCount": 135
+    "name": "Taha",
+    "verseCount": 135
   },
   {
     "id": 21,
-    "nameAr": "الأنبياء",
-    "nameEn": "Al-Anbya",
-    "ayahCount": 112
+    "name": "Al-Anbya",
+    "verseCount": 112
   },
   {
     "id": 22,
-    "nameAr": "الحج",
-    "nameEn": "Al-Hajj",
-    "ayahCount": 78
+    "name": "Al-Hajj",
+    "verseCount": 78
   },
   {
     "id": 23,
-    "nameAr": "المؤمنون",
-    "nameEn": "Al-Mu'minun",
-    "ayahCount": 118
+    "name": "Al-Mu'minun",
+    "verseCount": 118
   },
   {
     "id": 24,
-    "nameAr": "النور",
-    "nameEn": "An-Nur",
-    "ayahCount": 64
+    "name": "An-Nur",
+    "verseCount": 64
   },
   {
     "id": 25,
-    "nameAr": "الفرقان",
-    "nameEn": "Al-Furqan",
-    "ayahCount": 77
+    "name": "Al-Furqan",
+    "verseCount": 77
   },
   {
     "id": 26,
-    "nameAr": "الشعراء",
-    "nameEn": "Ash-Shu'ara",
-    "ayahCount": 227
+    "name": "Ash-Shu'ara",
+    "verseCount": 227
   },
   {
     "id": 27,
-    "nameAr": "النمل",
-    "nameEn": "An-Naml",
-    "ayahCount": 93
+    "name": "An-Naml",
+    "verseCount": 93
   },
   {
     "id": 28,
-    "nameAr": "القصص",
-    "nameEn": "Al-Qasas",
-    "ayahCount": 88
+    "name": "Al-Qasas",
+    "verseCount": 88
   },
   {
     "id": 29,
-    "nameAr": "العنكبوت",
-    "nameEn": "Al-'Ankabut",
-    "ayahCount": 69
+    "name": "Al-'Ankabut",
+    "verseCount": 69
   },
   {
     "id": 30,
-    "nameAr": "الروم",
-    "nameEn": "Ar-Rum",
-    "ayahCount": 60
+    "name": "Ar-Rum",
+    "verseCount": 60
   },
   {
     "id": 31,
-    "nameAr": "لقمان",
-    "nameEn": "Luqman",
-    "ayahCount": 34
+    "name": "Luqman",
+    "verseCount": 34
   },
   {
     "id": 32,
-    "nameAr": "السجدة",
-    "nameEn": "As-Sajdah",
-    "ayahCount": 30
+    "name": "As-Sajdah",
+    "verseCount": 30
   },
   {
     "id": 33,
-    "nameAr": "الأحزاب",
-    "nameEn": "Al-Ahzab",
-    "ayahCount": 73
+    "name": "Al-Ahzab",
+    "verseCount": 73
   },
   {
     "id": 34,
-    "nameAr": "سبإ",
-    "nameEn": "Saba",
-    "ayahCount": 54
+    "name": "Saba",
+    "verseCount": 54
   },
   {
     "id": 35,
-    "nameAr": "فاطر",
-    "nameEn": "Fatir",
-    "ayahCount": 45
+    "name": "Fatir",
+    "verseCount": 45
   },
   {
     "id": 36,
-    "nameAr": "يس",
-    "nameEn": "Ya-Sin",
-    "ayahCount": 83
+    "name": "Ya-Sin",
+    "verseCount": 83
   },
   {
     "id": 37,
-    "nameAr": "الصافات",
-    "nameEn": "As-Saffat",
-    "ayahCount": 182
+    "name": "As-Saffat",
+    "verseCount": 182
   },
   {
     "id": 38,
-    "nameAr": "ص",
-    "nameEn": "Sad",
-    "ayahCount": 88
+    "name": "Sad",
+    "verseCount": 88
   },
   {
     "id": 39,
-    "nameAr": "الزمر",
-    "nameEn": "Az-Zumar",
-    "ayahCount": 75
+    "name": "Az-Zumar",
+    "verseCount": 75
   },
   {
     "id": 40,
-    "nameAr": "غافر",
-    "nameEn": "Ghafir",
-    "ayahCount": 85
+    "name": "Ghafir",
+    "verseCount": 85
   },
   {
     "id": 41,
-    "nameAr": "فصلت",
-    "nameEn": "Fussilat",
-    "ayahCount": 54
+    "name": "Fussilat",
+    "verseCount": 54
   },
   {
     "id": 42,
-    "nameAr": "الشورى",
-    "nameEn": "Ash-Shuraa",
-    "ayahCount": 53
+    "name": "Ash-Shuraa",
+    "verseCount": 53
   },
   {
     "id": 43,
-    "nameAr": "الزخرف",
-    "nameEn": "Az-Zukhruf",
-    "ayahCount": 89
+    "name": "Az-Zukhruf",
+    "verseCount": 89
   },
   {
     "id": 44,
-    "nameAr": "الدخان",
-    "nameEn": "Ad-Dukhan",
-    "ayahCount": 59
+    "name": "Ad-Dukhan",
+    "verseCount": 59
   },
   {
     "id": 45,
-    "nameAr": "الجاثية",
-    "nameEn": "Al-Jathiyah",
-    "ayahCount": 37
+    "name": "Al-Jathiyah",
+    "verseCount": 37
   },
   {
     "id": 46,
-    "nameAr": "الأحقاف",
-    "nameEn": "Al-Ahqaf",
-    "ayahCount": 35
+    "name": "Al-Ahqaf",
+    "verseCount": 35
   },
   {
     "id": 47,
-    "nameAr": "محمد",
-    "nameEn": "Muhammad",
-    "ayahCount": 38
+    "name": "Muhammad",
+    "verseCount": 38
   },
   {
     "id": 48,
-    "nameAr": "الفتح",
-    "nameEn": "Al-Fath",
-    "ayahCount": 29
+    "name": "Al-Fath",
+    "verseCount": 29
   },
   {
     "id": 49,
-    "nameAr": "الحجرات",
-    "nameEn": "Al-Hujurat",
-    "ayahCount": 18
+    "name": "Al-Hujurat",
+    "verseCount": 18
   },
   {
     "id": 50,
-    "nameAr": "ق",
-    "nameEn": "Qaf",
-    "ayahCount": 45
+    "name": "Qaf",
+    "verseCount": 45
   },
   {
     "id": 51,
-    "nameAr": "الذاريات",
-    "nameEn": "Adh-Dhariyat",
-    "ayahCount": 60
+    "name": "Adh-Dhariyat",
+    "verseCount": 60
   },
   {
     "id": 52,
-    "nameAr": "الطور",
-    "nameEn": "At-Tur",
-    "ayahCount": 49
+    "name": "At-Tur",
+    "verseCount": 49
   },
   {
     "id": 53,
-    "nameAr": "النجم",
-    "nameEn": "An-Najm",
-    "ayahCount": 62
+    "name": "An-Najm",
+    "verseCount": 62
   },
   {
     "id": 54,
-    "nameAr": "القمر",
-    "nameEn": "Al-Qamar",
-    "ayahCount": 55
+    "name": "Al-Qamar",
+    "verseCount": 55
   },
   {
     "id": 55,
-    "nameAr": "الرحمن",
-    "nameEn": "Ar-Rahman",
-    "ayahCount": 78
+    "name": "Ar-Rahman",
+    "verseCount": 78
   },
   {
     "id": 56,
-    "nameAr": "الواقعة",
-    "nameEn": "Al-Waqi'ah",
-    "ayahCount": 96
+    "name": "Al-Waqi'ah",
+    "verseCount": 96
   },
   {
     "id": 57,
-    "nameAr": "الحديد",
-    "nameEn": "Al-Hadid",
-    "ayahCount": 29
+    "name": "Al-Hadid",
+    "verseCount": 29
   },
   {
     "id": 58,
-    "nameAr": "المجادلة",
-    "nameEn": "Al-Mujadila",
-    "ayahCount": 22
+    "name": "Al-Mujadila",
+    "verseCount": 22
   },
   {
     "id": 59,
-    "nameAr": "الحشر",
-    "nameEn": "Al-Hashr",
-    "ayahCount": 24
+    "name": "Al-Hashr",
+    "verseCount": 24
   },
   {
     "id": 60,
-    "nameAr": "الممتحنة",
-    "nameEn": "Al-Mumtahanah",
-    "ayahCount": 13
+    "name": "Al-Mumtahanah",
+    "verseCount": 13
   },
   {
     "id": 61,
-    "nameAr": "الصف",
-    "nameEn": "As-Saf",
-    "ayahCount": 14
+    "name": "As-Saf",
+    "verseCount": 14
   },
   {
     "id": 62,
-    "nameAr": "الجمعة",
-    "nameEn": "Al-Jumu'ah",
-    "ayahCount": 11
+    "name": "Al-Jumu'ah",
+    "verseCount": 11
   },
   {
     "id": 63,
-    "nameAr": "المنافقون",
-    "nameEn": "Al-Munafiqun",
-    "ayahCount": 11
+    "name": "Al-Munafiqun",
+    "verseCount": 11
   },
   {
     "id": 64,
-    "nameAr": "التغابن",
-    "nameEn": "At-Taghabun",
-    "ayahCount": 18
+    "name": "At-Taghabun",
+    "verseCount": 18
   },
   {
     "id": 65,
-    "nameAr": "الطلاق",
-    "nameEn": "At-Talaq",
-    "ayahCount": 12
+    "name": "At-Talaq",
+    "verseCount": 12
   },
   {
     "id": 66,
-    "nameAr": "التحريم",
-    "nameEn": "At-Tahrim",
-    "ayahCount": 12
+    "name": "At-Tahrim",
+    "verseCount": 12
   },
   {
     "id": 67,
-    "nameAr": "الملك",
-    "nameEn": "Al-Mulk",
-    "ayahCount": 30
+    "name": "Al-Mulk",
+    "verseCount": 30
   },
   {
     "id": 68,
-    "nameAr": "القلم",
-    "nameEn": "Al-Qalam",
-    "ayahCount": 52
+    "name": "Al-Qalam",
+    "verseCount": 52
   },
   {
     "id": 69,
-    "nameAr": "الحاقة",
-    "nameEn": "Al-Haqqah",
-    "ayahCount": 52
+    "name": "Al-Haqqah",
+    "verseCount": 52
   },
   {
     "id": 70,
-    "nameAr": "المعارج",
-    "nameEn": "Al-Ma'arij",
-    "ayahCount": 44
+    "name": "Al-Ma'arij",
+    "verseCount": 44
   },
   {
     "id": 71,
-    "nameAr": "نوح",
-    "nameEn": "Nuh",
-    "ayahCount": 28
+    "name": "Nuh",
+    "verseCount": 28
   },
   {
     "id": 72,
-    "nameAr": "الجن",
-    "nameEn": "Al-Jinn",
-    "ayahCount": 28
+    "name": "Al-Jinn",
+    "verseCount": 28
   },
   {
     "id": 73,
-    "nameAr": "المزمل",
-    "nameEn": "Al-Muzzammil",
-    "ayahCount": 20
+    "name": "Al-Muzzammil",
+    "verseCount": 20
   },
   {
     "id": 74,
-    "nameAr": "المدثر",
-    "nameEn": "Al-Muddaththir",
-    "ayahCount": 56
+    "name": "Al-Muddaththir",
+    "verseCount": 56
   },
   {
     "id": 75,
-    "nameAr": "القيامة",
-    "nameEn": "Al-Qiyamah",
-    "ayahCount": 40
+    "name": "Al-Qiyamah",
+    "verseCount": 40
   },
   {
     "id": 76,
-    "nameAr": "الانسان",
-    "nameEn": "Al-Insan",
-    "ayahCount": 31
+    "name": "Al-Insan",
+    "verseCount": 31
   },
   {
     "id": 77,
-    "nameAr": "المرسلات",
-    "nameEn": "Al-Mursalat",
-    "ayahCount": 50
+    "name": "Al-Mursalat",
+    "verseCount": 50
   },
   {
     "id": 78,
-    "nameAr": "النبإ",
-    "nameEn": "An-Naba",
-    "ayahCount": 40
+    "name": "An-Naba",
+    "verseCount": 40
   },
   {
     "id": 79,
-    "nameAr": "النازعات",
-    "nameEn": "An-Nazi'at",
-    "ayahCount": 46
+    "name": "An-Nazi'at",
+    "verseCount": 46
   },
   {
     "id": 80,
-    "nameAr": "عبس",
-    "nameEn": "'Abasa",
-    "ayahCount": 42
+    "name": "'Abasa",
+    "verseCount": 42
   },
   {
     "id": 81,
-    "nameAr": "التكوير",
-    "nameEn": "At-Takwir",
-    "ayahCount": 29
+    "name": "At-Takwir",
+    "verseCount": 29
   },
   {
     "id": 82,
-    "nameAr": "الإنفطار",
-    "nameEn": "Al-Infitar",
-    "ayahCount": 19
+    "name": "Al-Infitar",
+    "verseCount": 19
   },
   {
     "id": 83,
-    "nameAr": "المطففين",
-    "nameEn": "Al-Mutaffifin",
-    "ayahCount": 36
+    "name": "Al-Mutaffifin",
+    "verseCount": 36
   },
   {
     "id": 84,
-    "nameAr": "الإنشقاق",
-    "nameEn": "Al-Inshiqaq",
-    "ayahCount": 25
+    "name": "Al-Inshiqaq",
+    "verseCount": 25
   },
   {
     "id": 85,
-    "nameAr": "البروج",
-    "nameEn": "Al-Buruj",
-    "ayahCount": 22
+    "name": "Al-Buruj",
+    "verseCount": 22
   },
   {
     "id": 86,
-    "nameAr": "الطارق",
-    "nameEn": "At-Tariq",
-    "ayahCount": 17
+    "name": "At-Tariq",
+    "verseCount": 17
   },
   {
     "id": 87,
-    "nameAr": "الأعلى",
-    "nameEn": "Al-A'la",
-    "ayahCount": 19
+    "name": "Al-A'la",
+    "verseCount": 19
   },
   {
     "id": 88,
-    "nameAr": "الغاشية",
-    "nameEn": "Al-Ghashiyah",
-    "ayahCount": 26
+    "name": "Al-Ghashiyah",
+    "verseCount": 26
   },
   {
     "id": 89,
-    "nameAr": "الفجر",
-    "nameEn": "Al-Fajr",
-    "ayahCount": 30
+    "name": "Al-Fajr",
+    "verseCount": 30
   },
   {
     "id": 90,
-    "nameAr": "البلد",
-    "nameEn": "Al-Balad",
-    "ayahCount": 20
+    "name": "Al-Balad",
+    "verseCount": 20
   },
   {
     "id": 91,
-    "nameAr": "الشمس",
-    "nameEn": "Ash-Shams",
-    "ayahCount": 15
+    "name": "Ash-Shams",
+    "verseCount": 15
   },
   {
     "id": 92,
-    "nameAr": "الليل",
-    "nameEn": "Al-Layl",
-    "ayahCount": 21
+    "name": "Al-Layl",
+    "verseCount": 21
   },
   {
     "id": 93,
-    "nameAr": "الضحى",
-    "nameEn": "Ad-Duhaa",
-    "ayahCount": 11
+    "name": "Ad-Duhaa",
+    "verseCount": 11
   },
   {
     "id": 94,
-    "nameAr": "الشرح",
-    "nameEn": "Ash-Sharh",
-    "ayahCount": 8
+    "name": "Ash-Sharh",
+    "verseCount": 8
   },
   {
     "id": 95,
-    "nameAr": "التين",
-    "nameEn": "At-Tin",
-    "ayahCount": 8
+    "name": "At-Tin",
+    "verseCount": 8
   },
   {
     "id": 96,
-    "nameAr": "العلق",
-    "nameEn": "Al-'Alaq",
-    "ayahCount": 19
+    "name": "Al-'Alaq",
+    "verseCount": 19
   },
   {
     "id": 97,
-    "nameAr": "القدر",
-    "nameEn": "Al-Qadr",
-    "ayahCount": 5
+    "name": "Al-Qadr",
+    "verseCount": 5
   },
   {
     "id": 98,
-    "nameAr": "البينة",
-    "nameEn": "Al-Bayyinah",
-    "ayahCount": 8
+    "name": "Al-Bayyinah",
+    "verseCount": 8
   },
   {
     "id": 99,
-    "nameAr": "الزلزلة",
-    "nameEn": "Az-Zalzalah",
-    "ayahCount": 8
+    "name": "Az-Zalzalah",
+    "verseCount": 8
   },
   {
     "id": 100,
-    "nameAr": "العاديات",
-    "nameEn": "Al-'Adiyat",
-    "ayahCount": 11
+    "name": "Al-'Adiyat",
+    "verseCount": 11
   },
   {
     "id": 101,
-    "nameAr": "القارعة",
-    "nameEn": "Al-Qari'ah",
-    "ayahCount": 11
+    "name": "Al-Qari'ah",
+    "verseCount": 11
   },
   {
     "id": 102,
-    "nameAr": "التكاثر",
-    "nameEn": "At-Takathur",
-    "ayahCount": 8
+    "name": "At-Takathur",
+    "verseCount": 8
   },
   {
     "id": 103,
-    "nameAr": "العصر",
-    "nameEn": "Al-'Asr",
-    "ayahCount": 3
+    "name": "Al-'Asr",
+    "verseCount": 3
   },
   {
     "id": 104,
-    "nameAr": "الهمزة",
-    "nameEn": "Al-Humazah",
-    "ayahCount": 9
+    "name": "Al-Humazah",
+    "verseCount": 9
   },
   {
     "id": 105,
-    "nameAr": "الفيل",
-    "nameEn": "Al-Fil",
-    "ayahCount": 5
+    "name": "Al-Fil",
+    "verseCount": 5
   },
   {
     "id": 106,
-    "nameAr": "قريش",
-    "nameEn": "Quraysh",
-    "ayahCount": 4
+    "name": "Quraysh",
+    "verseCount": 4
   },
   {
     "id": 107,
-    "nameAr": "الماعون",
-    "nameEn": "Al-Ma'un",
-    "ayahCount": 7
+    "name": "Al-Ma'un",
+    "verseCount": 7
   },
   {
     "id": 108,
-    "nameAr": "الكوثر",
-    "nameEn": "Al-Kawthar",
-    "ayahCount": 3
+    "name": "Al-Kawthar",
+    "verseCount": 3
   },
   {
     "id": 109,
-    "nameAr": "الكافرون",
-    "nameEn": "Al-Kafirun",
-    "ayahCount": 6
+    "name": "Al-Kafirun",
+    "verseCount": 6
   },
   {
     "id": 110,
-    "nameAr": "النصر",
-    "nameEn": "An-Nasr",
-    "ayahCount": 3
+    "name": "An-Nasr",
+    "verseCount": 3
   },
   {
     "id": 111,
-    "nameAr": "المسد",
-    "nameEn": "Al-Masad",
-    "ayahCount": 5
+    "name": "Al-Masad",
+    "verseCount": 5
   },
   {
     "id": 112,
-    "nameAr": "الإخلاص",
-    "nameEn": "Al-Ikhlas",
-    "ayahCount": 4
+    "name": "Al-Ikhlas",
+    "verseCount": 4
   },
   {
     "id": 113,
-    "nameAr": "الفلق",
-    "nameEn": "Al-Falaq",
-    "ayahCount": 5
+    "name": "Al-Falaq",
+    "verseCount": 5
   },
   {
     "id": 114,
-    "nameAr": "الناس",
-    "nameEn": "An-Nas",
-    "ayahCount": 6
+    "name": "An-Nas",
+    "verseCount": 6
   }
 ]
