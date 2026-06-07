@@ -1,5 +1,5 @@
 {
-  "id": "8d421434-2d33-4c05-bc88-4fcea1e332da",
+  "id": "2605953b-c2d2-4ff2-8613-cc85d5dc69ef",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -59,7 +59,7 @@
         },
         "hash": {
           "name": "hash",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true
         },
