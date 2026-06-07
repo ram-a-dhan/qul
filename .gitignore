@@ -44,6 +44,7 @@ next-env.d.ts
 # assets
 src/assets/audio/*
 src/assets/audio/*/*
+src/assets/json/*.ndjson
 
 # empty folder placeholder
 !.gitkeep
