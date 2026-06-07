@@ -10,4 +10,9 @@ export default defineConfig({
   dbCredentials: {
     url: process.env.DATABASE_URL!,
   },
+  migrations: {
+    schema: "public",
+  },
+  verbose: true,
+  strict: false,
 });

@@ -8,7 +8,7 @@ CREATE TABLE "fingerprints" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"verse_id" integer NOT NULL,
 	"reciter_id" integer NOT NULL,
-	"hash" text NOT NULL,
+	"hash" integer NOT NULL,
 	"offset_ms" integer NOT NULL
 );
 --> statement-breakpoint

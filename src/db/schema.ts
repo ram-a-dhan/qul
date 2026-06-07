@@ -45,7 +45,7 @@ export const fingerprints = pgTable(
     id: serial("id").primaryKey(),
     verseId: integer("verse_id").notNull().references(() => verses.id),
     reciterId: integer("reciter_id").notNull().references(() => reciters.id),
-    hash: text("hash").notNull(),
+    hash: integer("hash").notNull(),
     offsetMs: integer("offset_ms").notNull(),
   },
   (t) => [
