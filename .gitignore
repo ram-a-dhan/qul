@@ -40,3 +40,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# assets
+src/assets/audio/*
+src/assets/audio/*/*
+
+# empty folder placeholder
+!.gitkeep
