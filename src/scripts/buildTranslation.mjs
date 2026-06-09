@@ -19,7 +19,7 @@ import { fileURLToPath } from "url";
 const INPUT_FILE = "id.indonesian.txt";
 const OUTPUT_FILE = "translation-id.json";
 const LANGUAGE = "id";
-const TRANSLATOR = "Kemenag RI";
+const TRANSLATOR = "Indonesian Ministry of Religious Affairs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const INPUT = resolve(__dirname, `../assets/txt/${INPUT_FILE}`);
