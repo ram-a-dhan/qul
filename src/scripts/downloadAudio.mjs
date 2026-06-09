@@ -3,7 +3,7 @@
 /**
  * downloadAudio.mjs
  *
- * Downloads per-chapter translation audio zips from EveryAyah.com.
+ * Downloads per-chapter translation audio zips from EveryAyah.com/data.
  * Saves to src/assets/audio/{001..114}.zip
  *
  * Usage:
