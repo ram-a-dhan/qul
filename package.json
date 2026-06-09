@@ -11,7 +11,8 @@
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "db:seed-chapters-verses": "tsx src/db/seeders/seedChaptersVerses.ts",
-    "db:seed-translation": "tsx src/db/seeders/seedTranslation.ts"
+    "db:seed-translation": "tsx src/db/seeders/seedTranslation.ts",
+    "db:seed-reciter-fingerprint": "tsx src/db/seeders/seedReciterFingerprint.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
