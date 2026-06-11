@@ -1,16 +1,13 @@
-#!/usr/bin/env node
-
 /**
- * downloadAudio.mjs
+ * downloadAudio.ts
  *
  * Downloads per-chapter translation audio zips from EveryAyah.com/data.
  * Saves to src/assets/audio/{001..114}.zip
  *
- * Usage:
- *   node scripts/downloadAudio.mjs
- *   node scripts/downloadAudio.mjs --delay 3000   (ms between chapters)
- *   node scripts/downloadAudio.mjs --from 10      (resume from chapter)
- *   node scripts/downloadAudio.mjs --retries 5
+ * Options:
+ *   --delay 3000   (ms between chapters)
+ *   --from 10      (resume from chapter)
+ *   --retries 5
  */
 
 import fs from "fs";
@@ -20,7 +17,7 @@ import { fileURLToPath } from "url";
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 
-const FOLDER_NAME = "Alafasy_128kbps";
+const FOLDER_NAME = "Alafasy_128kbps"; // Change this to change reciter
 const BASE_URL = `https://everyayah.com/data/${FOLDER_NAME}/zips`;
 const OUTPUT_DIR = "../assets/audio";
 const TOTAL_CHAPTERS = 114;
@@ -36,7 +33,7 @@ const DEFAULTS = {
 
 function parseArgs() {
   const args = process.argv.slice(2);
-  const get = (flag) => {
+  const get = (flag: string) => {
     const i = args.indexOf(flag);
     return i !== -1 && args[i + 1] ? Number(args[i + 1]) : null;
   };
@@ -50,21 +47,21 @@ function parseArgs() {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-function pad(n) {
+function pad(n: number) {
   return String(n).padStart(3, "0");
 }
 
-function sleep(ms) {
+function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function formatBytes(bytes) {
+function formatBytes(bytes: number) {
   if (bytes < 1024) return `${bytes} B`;
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-function formatEta(remainingChapters, msPerChapter) {
+function formatEta(remainingChapters: number, msPerChapter: number) {
   const totalMs = remainingChapters * msPerChapter;
   const totalSec = Math.round(totalMs / 1000);
   const min = Math.floor(totalSec / 60);
@@ -74,10 +71,10 @@ function formatEta(remainingChapters, msPerChapter) {
 
 // ─── Download ─────────────────────────────────────────────────────────────────
 
-function fetchToBuffer(url) {
+function fetchToBuffer(url: string): Promise<Uint8Array> {
   return new Promise((resolve, reject) => {
     const req = https.get(url, { timeout: 30_000 }, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+      if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         return fetchToBuffer(res.headers.location).then(resolve).catch(reject);
       }
 
@@ -85,8 +82,8 @@ function fetchToBuffer(url) {
         return reject(new Error(`HTTP ${res.statusCode}`));
       }
 
-      const chunks = [];
-      res.on("data", (chunk) => chunks.push(chunk));
+      const chunks: Buffer[] = [];
+      res.on("data", (chunk: Buffer) => chunks.push(chunk));
       res.on("end", () => {
         const totalLength = chunks.reduce((acc, c) => acc + c.length, 0);
         const merged = new Uint8Array(totalLength);
@@ -101,11 +98,11 @@ function fetchToBuffer(url) {
     });
 
     req.on("timeout", () => req.destroy(new Error("Request timed out")));
-    req.on("error", (err) => reject(new Error(`get error: ${err.message} | code: ${err.code}`)));
+    req.on("error", (err) => reject(new Error(`get error: ${err.message} | code: ${(err as NodeJS.ErrnoException).code}`)));
   });
 }
 
-async function downloadChapter(chapter, outputDir, retries, retryDelay) {
+async function downloadChapter(chapter: number, outputDir: string, retries: number, retryDelay: number) {
   const filename = `${pad(chapter)}.zip`;
   const url = `${BASE_URL}/${filename}`;
   const dest = path.join(outputDir, filename);
@@ -131,10 +128,10 @@ async function downloadChapter(chapter, outputDir, retries, retryDelay) {
       fs.writeFileSync(dest, buffer);
       return { skipped: false, bytes };
     } catch (err) {
-      lastError = err;
+      lastError = err as Error;
       if (attempt < retries) {
         console.log(
-          `⚠️  Attempt ${attempt}/${retries} failed: ${err.message}. Retrying in ${retryDelay / 1000}s…`
+          `⚠️  Attempt ${attempt}/${retries} failed: ${(err as Error).message}. Retrying in ${retryDelay / 1000}s…`
         );
         await sleep(retryDelay);
       }
@@ -202,8 +199,9 @@ async function main() {
         console.log(`✅ ${formatBytes(bytes)} in ${(elapsed / 1000).toFixed(1)}s${eta}`);
       }
     } catch (err) {
-      console.log(`⛔ ${err.message}`);
-      failed.push({ chapter, error: err.message });
+      const errMsg = (err as Error).message
+      console.log(`⛔ ${errMsg}`);
+      failed.push({ chapter, error: errMsg });
     }
 
     // Wait between chapters — skip after the last one
@@ -238,7 +236,11 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error("Unexpected error:", err);
-  process.exit(1);
-});
+main()
+  .then(() => {
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

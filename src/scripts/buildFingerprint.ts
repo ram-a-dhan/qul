@@ -1,7 +1,5 @@
-#!/usr/bin/env node
-
 /**
- * buildFingerprint.mjs
+ * buildFingerprint.ts
  *
  * Reads unzipped mp3s from src/assets/audio/, generates spectral
  * peak fingerprint hashes using fft.js, streams to fingerprint.ndjson.
@@ -13,12 +11,11 @@
  *   max value: ~1,048,574 — well within Postgres integer range
  *
  * Prerequisites:
- *   - brew install ffmpeg
+ *   - apt install ffmpeg
  *   - audio zips already downloaded and unzipped
  *
- * Usage:
- *   node scripts/buildFingerprint.mjs
- *   node scripts/buildFingerprint.mjs --from 10
+ * Options:
+ *   --from 10 (from chapter 10)
  */
 
 import fs from "fs";
@@ -49,7 +46,7 @@ function parseArgs() {
 
 // ─── Decode ───────────────────────────────────────────────────────────────────
 
-function decodeToFloat32(mp3Path) {
+function decodeToFloat32(mp3Path: string) {
   const raw = execSync(
     `ffmpeg -i "${mp3Path}" -ar ${SAMPLE_RATE} -ac 1 -f s16le -loglevel error -`,
     { maxBuffer: 20 * 1024 * 1024 }
@@ -72,11 +69,11 @@ for (let i = 0; i < FFT_SIZE; i++) {
 
 // pack f1, f2, dt into a single 32-bit integer
 // f1/f2: 9 bits each (0–511), dt: 2 bits (1–2)
-function packHash(f1, f2, dt) {
+function packHash(f1: number, f2: number, dt: number) {
   return (f1 << 11) | (f2 << 2) | dt;
 }
 
-function generateHashes(samples) {
+function generateHashes(samples: Float32Array<ArrayBuffer>) {
   const out   = fft.createComplexArray();
   const frame = new Float32Array(FFT_SIZE);
   const frames = [];
@@ -182,8 +179,8 @@ async function main() {
       succeeded++;
 
       if ((i + 1) % 100 === 0) {
-        const elapsed   = ((Date.now() - startTime) / 1000).toFixed(1);
-        const rate      = ((i + 1) / elapsed).toFixed(1);
+        const elapsed   = Number(((Date.now() - startTime) / 1000).toFixed(1));
+        const rate      = Number(((i + 1) / elapsed).toFixed(1));
         const remaining = files.length - i - 1;
         const eta       = Math.round(remaining / rate);
         console.log(
@@ -191,8 +188,9 @@ async function main() {
         );
       }
     } catch (err) {
-      console.error(`⛔ ${position} ${file} — ${err.message}`);
-      failed.push({ file, error: err.message });
+      const msg = err instanceof Error ? err?.message : "Something went wrong!"
+      console.error(`⛔ ${position} ${file} — ${msg}`);
+      failed.push({ file, error: msg });
     }
   }
 
@@ -214,7 +212,11 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error("Unexpected error:", err);
-  process.exit(1);
-});
+main()
+  .then(() => {
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
