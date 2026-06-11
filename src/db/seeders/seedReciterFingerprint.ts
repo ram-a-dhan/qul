@@ -139,7 +139,11 @@ async function main() {
   console.log(`⏱️  Total time           : ${totalSec}s`);
 }
 
-main().catch((err) => {
-  console.error("❌ Error:", err.message);
-  process.exit(1);
-});
+main()
+  .then(() => {
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error("❌ Error:", err);
+    process.exit(1);
+  });
