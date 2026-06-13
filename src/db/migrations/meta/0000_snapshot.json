@@ -1,5 +1,5 @@
 {
-  "id": "2605953b-c2d2-4ff2-8613-cc85d5dc69ef",
+  "id": "bd05a6b6-5960-4028-beb2-d8ef225d83fb",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -39,12 +39,6 @@
       "name": "fingerprints",
       "schema": "",
       "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
         "verse_id": {
           "name": "verse_id",
           "type": "integer",
@@ -136,7 +130,17 @@
           "onUpdate": "no action"
         }
       },
-      "compositePrimaryKeys": {},
+      "compositePrimaryKeys": {
+        "fingerprints_verse_id_reciter_id_hash_offset_ms_pk": {
+          "name": "fingerprints_verse_id_reciter_id_hash_offset_ms_pk",
+          "columns": [
+            "verse_id",
+            "reciter_id",
+            "hash",
+            "offset_ms"
+          ]
+        }
+      },
       "uniqueConstraints": {},
       "policies": {},
       "checkConstraints": {},
@@ -191,12 +195,6 @@
       "name": "translations",
       "schema": "",
       "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
         "verse_id": {
           "name": "verse_id",
           "type": "integer",
@@ -238,17 +236,17 @@
           "onUpdate": "no action"
         }
       },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "translations_unique": {
-          "name": "translations_unique",
-          "nullsNotDistinct": false,
+      "compositePrimaryKeys": {
+        "translations_verse_id_lang_translator_pk": {
+          "name": "translations_verse_id_lang_translator_pk",
           "columns": [
             "verse_id",
-            "lang"
+            "lang",
+            "translator"
           ]
         }
       },
+      "uniqueConstraints": {},
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false
