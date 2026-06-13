@@ -60,7 +60,7 @@ async function main() {
   const deleted = await db
     .delete(fingerprints)
     .where(eq(fingerprints.reciterId, reciter.id))
-    .returning({ id: fingerprints.id });
+    .returning({ hash: fingerprints.hash });
 
   console.log(`✅ Cleared ${deleted.length} existing rows`);
 

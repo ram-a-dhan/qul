@@ -6,6 +6,7 @@ import {
   smallint,
   index,
   unique,
+  primaryKey,
 } from "drizzle-orm/pg-core";
 
 export const reciters = pgTable(
@@ -19,7 +20,8 @@ export const reciters = pgTable(
 );
 
 export const chapters = pgTable(
-  "chapters", {
+  "chapters",
+  {
     id: smallint("id").primaryKey(),
     name: text("name").notNull(),
     verseCount: smallint("verse_count").notNull(),
@@ -35,20 +37,20 @@ export const verses = pgTable(
     text: text("text").notNull(),
   },
   (t) => [
-    unique("verses_unique").on(t.chapterId, t.verseNumber)
+    unique("verses_unique").on(t.chapterId, t.verseNumber),
   ],
 );
 
 export const fingerprints = pgTable(
   "fingerprints",
   {
-    id: serial("id").primaryKey(),
     verseId: integer("verse_id").notNull().references(() => verses.id),
     reciterId: integer("reciter_id").notNull().references(() => reciters.id),
     hash: integer("hash").notNull(),
     offsetMs: integer("offset_ms").notNull(),
   },
   (t) => [
+    primaryKey({ columns: [t.verseId, t.reciterId, t.hash, t.offsetMs] }),
     index("fingerprints_hash_idx").on(t.hash),
     index("fingerprints_reciter_hash_idx").on(t.reciterId, t.hash),
   ],
@@ -57,13 +59,12 @@ export const fingerprints = pgTable(
 export const translations = pgTable(
   "translations",
   {
-    id: serial("id").primaryKey(),
     verseId: integer("verse_id").notNull().references(() => verses.id),
     lang: text("lang").notNull(),
     translator: text("translator").notNull(),
     text: text("text").notNull(),
   },
   (t) => [
-    unique("translations_unique").on(t.verseId, t.lang)
+    primaryKey({ columns: [t.verseId, t.lang, t.translator] }),
   ],
 );

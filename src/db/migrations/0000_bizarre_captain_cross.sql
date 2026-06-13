@@ -5,11 +5,11 @@ CREATE TABLE "chapters" (
 );
 --> statement-breakpoint
 CREATE TABLE "fingerprints" (
-	"id" serial PRIMARY KEY NOT NULL,
 	"verse_id" integer NOT NULL,
 	"reciter_id" integer NOT NULL,
 	"hash" integer NOT NULL,
-	"offset_ms" integer NOT NULL
+	"offset_ms" integer NOT NULL,
+	CONSTRAINT "fingerprints_verse_id_reciter_id_hash_offset_ms_pk" PRIMARY KEY("verse_id","reciter_id","hash","offset_ms")
 );
 --> statement-breakpoint
 CREATE TABLE "reciters" (
@@ -21,12 +21,11 @@ CREATE TABLE "reciters" (
 );
 --> statement-breakpoint
 CREATE TABLE "translations" (
-	"id" serial PRIMARY KEY NOT NULL,
 	"verse_id" integer NOT NULL,
 	"lang" text NOT NULL,
 	"translator" text NOT NULL,
 	"text" text NOT NULL,
-	CONSTRAINT "translations_unique" UNIQUE("verse_id","lang")
+	CONSTRAINT "translations_verse_id_lang_translator_pk" PRIMARY KEY("verse_id","lang","translator")
 );
 --> statement-breakpoint
 CREATE TABLE "verses" (
