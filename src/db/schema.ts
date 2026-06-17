@@ -4,20 +4,9 @@ import {
   integer,
   text,
   smallint,
-  index,
   unique,
   primaryKey,
 } from "drizzle-orm/pg-core";
-
-export const reciters = pgTable(
-  "reciters",
-  {
-    id: serial("id").primaryKey(),
-    slug: text("slug").notNull().unique(),
-    name: text("name").notNull(),
-    recitationStyle: text("recitation_style").notNull(),
-  },
-);
 
 export const chapters = pgTable(
   "chapters",
@@ -38,21 +27,6 @@ export const verses = pgTable(
   },
   (t) => [
     unique("verses_unique").on(t.chapterId, t.verseNumber),
-  ],
-);
-
-export const fingerprints = pgTable(
-  "fingerprints",
-  {
-    verseId: integer("verse_id").notNull().references(() => verses.id),
-    reciterId: integer("reciter_id").notNull().references(() => reciters.id),
-    hash: integer("hash").notNull(),
-    offsetMs: integer("offset_ms").notNull(),
-  },
-  (t) => [
-    primaryKey({ columns: [t.verseId, t.reciterId, t.hash, t.offsetMs] }),
-    index("fingerprints_hash_idx").on(t.hash),
-    index("fingerprints_reciter_hash_idx").on(t.reciterId, t.hash),
   ],
 );
 
