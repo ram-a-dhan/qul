@@ -24,6 +24,7 @@ interface ISeedVerse {
   chapterId: number;
   verseNumber: number;
   text: string;
+  textNormalized: string;
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -71,9 +72,10 @@ async function main() {
     await db
       .insert(verses)
       .values(batch.map((v) => ({
-        chapterId:   v.chapterId,
-        verseNumber: v.verseNumber,
-        text:        v.text,
+        chapterId:      v.chapterId,
+        verseNumber:    v.verseNumber,
+        text:           v.text,
+        textNormalized: v.textNormalized,
       })))
       .onConflictDoNothing();
     verseCount += batch.length;
