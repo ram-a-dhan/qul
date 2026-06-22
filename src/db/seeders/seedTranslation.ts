@@ -65,11 +65,11 @@ async function main() {
 
   // ── translation ──────────────────────────────────────────────────────────
 
-  for (const t of TRANSLATION_FILES) {
-    console.log(`\n🌱 Seeding translation file: ${t}...`);
+  for (const file of TRANSLATION_FILES) {
+    console.log(`\n🌱 Seeding translation file: ${file}...`);
 
     const translationsJson: ISeedTranslation[] = JSON.parse(
-      fs.readFileSync(path.join(JSON_DIR, t), "utf8")
+      fs.readFileSync(path.join(JSON_DIR, file), "utf8")
     );
 
     const rows = translationsJson
@@ -98,7 +98,7 @@ async function main() {
       console.log(`   ${count}/${rows.length}`);
     });
 
-    console.log(`✅ ${count} ${t} translation file seeded`);
+    console.log(`✅ ${count} ${file} translation file seeded`);
   };
 }
 
