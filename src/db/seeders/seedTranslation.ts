@@ -29,8 +29,10 @@ const JSON_DIR  = path.resolve(__dirname, "../../assets/json");
 
 const CHUNK = 500;
 
-// const TRANSLATION_FILE = "translation-en.json";
-const TRANSLATION_FILE = "translation-id.json";
+const TRANSLATION_FILES = [
+  "translation-en.json",
+  "translation-id.json",
+];
 
 async function chunk<T>(
   arr: T[],
@@ -62,39 +64,42 @@ async function main() {
   console.log(`✅ ${verseRows.length} verses mapped`);
 
   // ── translation ──────────────────────────────────────────────────────────
-  console.log(`\n🌱 Seeding translation file: ${TRANSLATION_FILE}...`);
 
-  const translationsJson: ISeedTranslation[] = JSON.parse(
-    fs.readFileSync(path.join(JSON_DIR, TRANSLATION_FILE), "utf8")
-  );
+  for (const t of TRANSLATION_FILES) {
+    console.log(`\n🌱 Seeding translation file: ${t}...`);
 
-  const rows = translationsJson
-    .map((t) => {
-      const verseId = verseIdMap[`${t.chapterId}:${t.verseNumber}`];
-      if (!verseId) {
-        console.warn(`  ⚠️  No verse found for ${t.chapterId}:${t.verseNumber}`);
-        return null;
-      }
-      return {
-        verseId,
-        lang: t.lang,
-        translator: t.translator,
-        text: t.text,
-      };
-    })
-    .filter((t): t is NonNullable<typeof t> => t !== null);
+    const translationsJson: ISeedTranslation[] = JSON.parse(
+      fs.readFileSync(path.join(JSON_DIR, t), "utf8")
+    );
 
-  let count = 0;
-  await chunk(rows, CHUNK, async (batch) => {
-    await db
-      .insert(translations)
-      .values(batch)
-      .onConflictDoNothing();
-    count += batch.length;
-    console.log(`   ${count}/${rows.length}`);
-  });
+    const rows = translationsJson
+      .map((t) => {
+        const verseId = verseIdMap[`${t.chapterId}:${t.verseNumber}`];
+        if (!verseId) {
+          console.warn(`  ⚠️  No verse found for ${t.chapterId}:${t.verseNumber}`);
+          return null;
+        }
+        return {
+          verseId,
+          lang: t.lang,
+          translator: t.translator,
+          text: t.text,
+        };
+      })
+      .filter((t): t is NonNullable<typeof t> => t !== null);
 
-  console.log(`✅ ${count} ${TRANSLATION_FILE} translation file seeded`);
+    let count = 0;
+    await chunk(rows, CHUNK, async (batch) => {
+      await db
+        .insert(translations)
+        .values(batch)
+        .onConflictDoNothing();
+      count += batch.length;
+      console.log(`   ${count}/${rows.length}`);
+    });
+
+    console.log(`✅ ${count} ${t} translation file seeded`);
+  };
 }
 
 main()
