@@ -24,6 +24,7 @@ export const verses = pgTable(
     chapterId: smallint("chapter_id").notNull().references(() => chapters.id),
     verseNumber: smallint("verse_number").notNull(),
     text: text("text").notNull(),
+    textNormalized: text("text_normalized").notNull(),
   },
   (t) => [
     unique("verses_unique").on(t.chapterId, t.verseNumber),

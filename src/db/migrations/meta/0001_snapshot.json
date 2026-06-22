@@ -1,6 +1,6 @@
 {
-  "id": "4e227e74-86ca-4098-97be-8702368b1ce8",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "353f24b6-44e6-4a8d-89bc-1a8047b4f7c1",
+  "prevId": "4e227e74-86ca-4098-97be-8702368b1ce8",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -69,15 +69,15 @@
         "translations_verse_id_verses_id_fk": {
           "name": "translations_verse_id_verses_id_fk",
           "tableFrom": "translations",
-          "tableTo": "verses",
           "columnsFrom": [
             "verse_id"
           ],
+          "tableTo": "verses",
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
+          "onUpdate": "no action",
+          "onDelete": "no action"
         }
       },
       "compositePrimaryKeys": {
@@ -135,26 +135,26 @@
         "verses_chapter_id_chapters_id_fk": {
           "name": "verses_chapter_id_chapters_id_fk",
           "tableFrom": "verses",
-          "tableTo": "chapters",
           "columnsFrom": [
             "chapter_id"
           ],
+          "tableTo": "chapters",
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
+          "onUpdate": "no action",
+          "onDelete": "no action"
         }
       },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
         "verses_unique": {
           "name": "verses_unique",
-          "nullsNotDistinct": false,
           "columns": [
             "chapter_id",
             "verse_number"
-          ]
+          ],
+          "nullsNotDistinct": false
         }
       },
       "policies": {},
@@ -164,10 +164,10 @@
   },
   "enums": {},
   "schemas": {},
+  "views": {},
   "sequences": {},
   "roles": {},
   "policies": {},
-  "views": {},
   "_meta": {
     "columns": {},
     "schemas": {},
