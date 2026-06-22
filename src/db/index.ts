@@ -1,22 +1,15 @@
 import { config } from "dotenv";
-import { drizzle } from "drizzle-orm/neon-http";
+import { drizzle as neonDrizzle } from "drizzle-orm/neon-http";
 import { neon } from "@neondatabase/serverless";
+import { drizzle as pgDrizzle } from "drizzle-orm/node-postgres";
+import { Pool } from "pg";
 import * as schema from "./schema";
 
 config({ path: ".env" });
 
-const sql = neon(process.env.DATABASE_URL!);
+// Determine driver by environment: dev → node-postgres, prod → neon
+const isProduction = process.env.NODE_ENV === "production";
 
-export const db = drizzle(sql, { schema });
-
-// // Local postgres DB testing mode
-// import { config } from "dotenv";
-// import { drizzle } from "drizzle-orm/node-postgres";
-// import { Pool } from "pg";
-// import * as schema from "./schema";
-
-// config({ path: ".env" });
-
-// const client = new Pool({ connectionString: process.env.DATABASE_URL });
-
-// export const db = drizzle({ client, schema });
+export const db = isProduction
+  ? neonDrizzle(neon(process.env.DATABASE_URL!), { schema })
+  : pgDrizzle(new Pool({ connectionString: process.env.DATABASE_URL }), { schema });
