@@ -17,6 +17,7 @@ CREATE TABLE "verses" (
 	"chapter_id" smallint NOT NULL,
 	"verse_number" smallint NOT NULL,
 	"text" text NOT NULL,
+	"text_normalized" text NOT NULL,
 	CONSTRAINT "verses_unique" UNIQUE("chapter_id","verse_number")
 );
 --> statement-breakpoint
