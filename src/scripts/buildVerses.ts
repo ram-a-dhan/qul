@@ -16,7 +16,7 @@ interface ISeedChapter {
   textNormalized: string;
 }
 
-const INPUT_PATH_SIMPLE = "../assets/txt/quran-simple.txt";
+const INPUT_PATH_SIMPLE = "../assets/txt/quran-simple-clean.txt";
 const INPUT_PATH_UTHMANI = "../assets/txt/quran-uthmani.txt";
 const OUTPUT_PATH = "../assets/json/verses.json";
 
