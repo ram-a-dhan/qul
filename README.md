@@ -35,10 +35,11 @@ $ pnpm script:build-chapters
 
 ### Verses
 
-Download the verses txt file from [https://tanzil.net/download](https://tanzil.net/download) and put it in the txt asset subfolder:
+Download the verses txt files from [https://tanzil.net/download](https://tanzil.net/download) and put it in the txt asset subfolder:
 
 ```sh
-src/assets/txt/quran-simple.txt
+src/assets/txt/quran-simple-clean.txt
+src/assets/txt/quran-uthmani.txt
 ```
 
 Build the verses json file:
@@ -49,7 +50,7 @@ $ pnpm script:build-verses
 
 ### Translation
 
-Download translation txt file from [https://tanzil.net/trans](https://tanzil.net/trans) and put it in the txt asset subfolder:
+Download translation txt files from [https://tanzil.net/trans](https://tanzil.net/trans) and put it in the txt asset subfolder:
 
 ```sh
 src/assets/txt/en.sahih.txt
@@ -59,39 +60,20 @@ Add the translation specs in the build script:
 
 ```ts
 // src/scripts/buildTranslation.ts
-const SPECS: ISpecs = {
-  INPUT_FILE: "en.sahih.txt",
-  OUTPUT_FILE: "translation-en.json",
-  LANGUAGE: "en",
-  TRANSLATOR: "Saheeh International",
-};
+const TRANSLATION_SPECS: ITranslationSpecs[] = [
+  {
+    inputFile: "en.sahih.txt",
+    outputFile: "translation-en.json",
+    lang: "en",
+    translator: "Saheeh International",
+  },
+];
 ```
 
 Build the translation json file:
 
 ```sh
 $ pnpm script:build-translation 
-```
-
-### Audio Fingerprint
-
-Add the target reciter folder name from [https://everyayah.com/data](https://everyayah.com/data) in the download script:
-
-```ts
-// src/scripts/downloadAudio.ts
-const FOLDER_NAME = "Alafasy_128kbps";
-```
-
-Download all 114 chapters of audio zip files:
-
-```sh
-$ pnpm script:download-audio 
-```
-
-Build the audio fingerprint json file:
-
-```sh
-$ pnpm script:build-fingerprint 
 ```
 
 ## Seed Scripts
@@ -110,32 +92,15 @@ Add the translation source filename in the seed script:
 
 ```ts
 // src/db/seeders/seedTranslation.ts
-const TRANSLATION_FILE = "translation-en.json";
+const TRANSLATION_FILES = [
+  "translation-en.json",
+];
 ```
 
 Run the translation seeder:
 
 ```sh
 $ pnpm db:seed-translation
-```
-
-### Audio Fingerprint
-
-Add the reciter specs the seed script:
-
-```ts
-// src/db/seeders/seedReciterFingerprint
-const RECITER: ISeedReciter = {
-  slug:            "mishary-alafasy",
-  name:            "Mishary Rashid Alafasy",
-  recitationStyle: "hafs",
-};
-```
-
-Run the reciter fingerprint seeder:
-
-```sh
-$ pnpm db:seed-reciter-fingerprint
 ```
 
 ## Development
